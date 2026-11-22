@@ -31,9 +31,11 @@ section{margin-bottom:40px}
 .pic{position:relative;aspect-ratio:4/3;background:#f4f4f5;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--muted);text-align:center;padding:12px}
 .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:8px;display:block}
 .body{padding:16px;display:flex;flex-direction:column;gap:4px;flex:1}
-.body h3{font-size:16px;font-weight:600}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.body h3{font-size:16px;font-weight:700}
 .body p{font-size:14px;color:var(--muted)}
-.price{font-size:15px;font-weight:600;margin:8px 0 16px}
+.price{font-size:15px;font-weight:700;white-space:nowrap}
+.body p{margin-bottom:16px}
 .two{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .two .btn{padding:0 8px;font-size:13px}
 #cart{position:fixed;left:16px;right:16px;bottom:16px;max-width:480px;margin:0 auto;display:none;justify-content:space-between;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);padding:10px 10px 10px 16px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.12);font-size:14px;font-weight:500}
@@ -92,9 +94,8 @@ document.getElementById("cards").innerHTML = tools.map(([img,cat,name,line,price
  <div class="card">
   <div class="pic">${name}<img src="images/${img}.webp" alt="${name}" loading="lazy" onerror="this.remove()"></div>
   <div class="body">
-   <h3>${name}</h3>
+   <div class="top"><h3>${name}</h3><span class="price">በቀን ${price} ብር</span></div>
    <p>${line}</p>
-   <div class="price">በቀን ${price} ብር</div>
    <div class="two">
     <a class="btn" href="https://www.youtube.com/results?search_query=${encodeURIComponent(en + " how to use")}" target="_blank">አጠቃቀሙን ይዩ</a>
     <button class="btn btn-main" onclick="add(this,'${name}','${en}')">ምረጥ</button>
