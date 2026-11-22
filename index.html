@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="images/airless-paint-sprayer.webp">
 <style>
-:root{--bg:#fafaf9;--fg:#15343B;--card:#fff;--muted:#64748b;--border:#e4e4e7;--primary:#15343B;--primary-fg:#fafafa;--accent:#F3C316;--radius:8px}
+:root{--bg:#fafaf9;--fg:#15343B;--card:#fff;--muted:#64748b;--border:#e4e4e7;--primary:#F3C316;--primary-fg:#15343B;--accent:#F3C316;--radius:8px}
 *{box-sizing:border-box;margin:0}
 body{background:var(--bg);color:var(--fg);font-family:"Noto Sans Ethiopic","Kefa","Nyala","Ebrima",system-ui,sans-serif;font-size:15px;line-height:1.5;padding-bottom:88px;-webkit-font-smoothing:antialiased}
 a{color:inherit}
@@ -18,7 +18,7 @@ a{color:inherit}
 .btn{display:inline-flex;align-items:center;justify-content:center;height:36px;padding:0 14px;border-radius:var(--radius);font:inherit;font-size:14px;font-weight:500;text-decoration:none;white-space:nowrap;cursor:pointer;border:1px solid var(--border);background:var(--card);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.04);transition:background .15s}
 .btn:hover{background:#f4f4f5}
 .btn-main{background:var(--primary);border-color:var(--primary);color:var(--primary-fg)}
-.btn-main:hover{background:#1d4650}
+.btn-main:hover{background:#e0b210}
 nav{display:flex;align-items:center;height:56px;border-bottom:1px solid var(--border);margin-bottom:24px}
 .logo{font-weight:700;font-size:17px}
 .logo span{background:var(--accent);padding:0 6px;border-radius:4px}
@@ -39,7 +39,7 @@ section{margin-bottom:40px}
 .two{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .two .btn{padding:0 8px;font-size:13px;gap:6px}
 #cart{position:fixed;left:16px;right:16px;bottom:16px;max-width:480px;margin:0 auto;display:none;justify-content:space-between;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);padding:10px 10px 10px 16px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.12);font-size:14px;font-weight:500}
-.band{background:var(--primary);color:var(--primary-fg);border-radius:12px;padding:32px 20px;text-align:center}
+.band{background:var(--fg);color:#fafafa;border-radius:12px;padding:32px 20px;text-align:center}
 .band h2{font-size:20px;font-weight:600;margin-bottom:6px}
 .band p{opacity:.8;margin-bottom:20px}
 .band .btn{background:var(--accent);border-color:var(--accent);color:var(--fg)}
@@ -98,7 +98,7 @@ document.getElementById("cards").innerHTML = tools.map(([img,cat,name,line,price
    <p>${line}</p>
    <div class="two">
     <a class="btn" href="https://www.youtube.com/watch?v=${vid}" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>አጠቃቀሙን ይዩ</a>
-    <button class="btn btn-main" onclick="add(this,'${name}','${en}')">ምረጥ</button>
+    <button class="btn btn-main" onclick="add(this,'${name}','${en}')"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg>ምረጥ</button>
    </div>
   </div>
  </div>`).join("");
