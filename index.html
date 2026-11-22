@@ -63,16 +63,16 @@ footer{padding:28px 0;font-size:.9rem;color:var(--muted)}
  <div class="band">
   <h2>የሚፈልጉት መሣሪያ የለም?</h2>
   <p>ይንገሩን፤ እናመጣለን።</p>
-  <a class="btn btn-main" href="https://t.me/muyakiray">በቴሌግራም ይጻፉልን</a>
+  <a class="btn btn-main" href="tel:0911000000">ይደውሉ፦ 0911000000</a>
  </div>
 </section>
 
 <footer>
- ሙያ ኪራይ · አዲስ አበባ · ቴሌግራም: <a href="https://t.me/muyakiray">@muyakiray</a> · ስልክ: [YOUR NUMBER]<br>ፎቶዎች: Wikimedia Commons
+ ሙያ ኪራይ · አዲስ አበባ · ቴሌግራም: <a href="https://t.me/muyakiray">@muyakiray</a> · ስልክ: <a href="tel:0911000000">0911000000</a><br>ፎቶዎች: Wikimedia Commons
 </footer>
 </div>
 
-<div id="cart"><span id="count"></span><a class="btn btn-main" id="send">በቴሌግራም ይላኩ</a></div>
+<div id="cart"><span id="count"></span><a class="btn btn-main" href="tel:0911000000">ይደውሉ</a></div>
 
 <script>
 const TG = "muyakiray";
@@ -106,7 +106,6 @@ function add(btn, name, en) {
  btn.textContent = "✓ ተመርጧል";
  document.getElementById("cart").style.display = "flex";
  document.getElementById("count").textContent = cart.length + " መሣሪያ ተመርጧል";
- document.getElementById("send").href = `https://t.me/${TG}?text=${encodeURIComponent("ሰላም፣ እነዚህን መከራየት እፈልጋለሁ፦\n" + cart.map(c => "- " + c[0] + " (" + c[1] + ")").join("\n"))}`;
 }
 </script>
 </body>
