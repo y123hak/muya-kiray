@@ -10,38 +10,38 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="images/airless-paint-sprayer.webp">
 <style>
-:root{--bg:#F5F6F3;--ink:#15343B;--tape:#F3C316;--red:#C7352B;--card:#fff;--muted:#4d6268}
+:root{--bg:#fafaf9;--fg:#15343B;--card:#fff;--muted:#64748b;--border:#e4e4e7;--primary:#15343B;--primary-fg:#fafafa;--accent:#F3C316;--radius:8px}
 *{box-sizing:border-box;margin:0}
-body{background:var(--bg);color:var(--ink);font-family:"Noto Sans Ethiopic","Kefa","Nyala","Ebrima",system-ui,sans-serif;line-height:1.6}
+body{background:var(--bg);color:var(--fg);font-family:"Noto Sans Ethiopic","Kefa","Nyala","Ebrima",system-ui,sans-serif;font-size:15px;line-height:1.5;padding-bottom:88px;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 .wrap{max-width:1040px;margin:0 auto;padding:0 16px}
-.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--ink)}
-.btn-main{background:var(--tape);border-color:var(--tape);color:var(--ink)}
-nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
-.logo{font-weight:800;font-size:1.3rem}
-.logo span{background:var(--tape);padding:0 6px;border-radius:4px}
-.hero{padding:8px 0 4px}
-.hero h1{font-size:clamp(1.8rem,7vw,2.8rem);line-height:1.3;margin-bottom:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:36px;padding:0 14px;border-radius:var(--radius);font:inherit;font-size:14px;font-weight:500;text-decoration:none;white-space:nowrap;cursor:pointer;border:1px solid var(--border);background:var(--card);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.04);transition:background .15s}
+.btn:hover{background:#f4f4f5}
+.btn-main{background:var(--primary);border-color:var(--primary);color:var(--primary-fg)}
+.btn-main:hover{background:#1d4650}
+nav{display:flex;align-items:center;height:56px;border-bottom:1px solid var(--border);margin-bottom:24px}
+.logo{font-weight:700;font-size:17px}
+.logo span{background:var(--accent);padding:0 6px;border-radius:4px}
+.hero{margin-bottom:24px}
+.hero h1{font-size:clamp(26px,6vw,36px);font-weight:700;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
 .hero p{color:var(--muted)}
-.btns{display:flex;flex-wrap:wrap;gap:10px}
-section{padding:36px 0}
-h2{font-size:1.5rem;margin-bottom:18px}
-.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
-.card{background:var(--card);border-radius:12px;box-shadow:0 2px 8px rgba(21,52,59,.12);overflow:hidden;display:flex;flex-direction:column}
-.pic{aspect-ratio:4/3;background:repeating-linear-gradient(135deg,#eceee8 0 12px,#e3e6df 12px 24px);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted);text-align:center;padding:10px}
-.pic{position:relative}
+section{margin-bottom:40px}
+.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);overflow:hidden;display:flex;flex-direction:column}
+.pic{position:relative;aspect-ratio:4/3;background:#f4f4f5;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--muted);text-align:center;padding:12px}
 .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.body{padding:14px;display:flex;flex-direction:column;gap:4px;flex:1}
-.body h3{font-size:1.1rem}
-.price{font-weight:800;margin:6px 0 10px}
+.body{padding:16px;display:flex;flex-direction:column;gap:4px;flex:1}
+.body h3{font-size:16px;font-weight:600}
+.body p{font-size:14px;color:var(--muted)}
+.price{font-size:15px;font-weight:600;margin:8px 0 16px}
 .two{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.two .btn{text-align:center;font:inherit;font-size:.85rem;font-weight:700;cursor:pointer;padding:7px 8px}
-#cart{position:fixed;left:16px;right:16px;bottom:16px;max-width:560px;margin:0 auto;display:none;justify-content:space-between;align-items:center;gap:10px;background:var(--ink);color:var(--bg);padding:10px 12px 10px 16px;border-radius:12px}
-body{padding-bottom:80px}
-.band{background:var(--ink);color:var(--bg);border-radius:14px;padding:28px 20px;text-align:center}
-.band h2{margin-bottom:10px}
-.band p{margin-bottom:16px}
-footer{padding:28px 0;font-size:.9rem;color:var(--muted)}
+.two .btn{padding:0 8px;font-size:13px}
+#cart{position:fixed;left:16px;right:16px;bottom:16px;max-width:480px;margin:0 auto;display:none;justify-content:space-between;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);padding:10px 10px 10px 16px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.12);font-size:14px;font-weight:500}
+.band{background:var(--primary);color:var(--primary-fg);border-radius:12px;padding:32px 20px;text-align:center}
+.band h2{font-size:20px;font-weight:600;margin-bottom:6px}
+.band p{opacity:.8;margin-bottom:20px}
+.band .btn{background:var(--accent);border-color:var(--accent);color:var(--fg)}
+footer{border-top:1px solid var(--border);padding:24px 0;font-size:13px;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -55,7 +55,7 @@ footer{padding:28px 0;font-size:.9rem;color:var(--muted)}
  <p>ለጂፕሰም፣ ለቀለም፣ ለሴራሚክ፣ ለኤሌክትሪክና ለፋይበር ሥራ። አዲስ አበባ።</p>
 </header>
 
-<section id="tools" style="padding-top:16px">
+<section id="tools">
  <div class="cards" id="cards"></div>
 </section>
 
