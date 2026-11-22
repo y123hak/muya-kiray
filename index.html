@@ -22,9 +22,9 @@ a{color:inherit}
 nav{display:flex;align-items:center;height:56px;border-bottom:1px solid var(--border);margin-bottom:24px}
 .logo{font-weight:700;font-size:17px}
 .logo span{background:var(--accent);padding:0 6px;border-radius:4px}
-.hero{margin-bottom:24px}
-.hero h1{font-size:clamp(26px,6vw,36px);font-weight:700;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
-.hero p{color:var(--muted)}
+.hero{margin:8px 0 28px}
+.hero h1{font-size:clamp(38px,11vw,64px);font-weight:700;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+.hero p{color:var(--muted);font-size:clamp(17px,4.5vw,21px)}
 section{margin-bottom:40px}
 .cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
 .card{background:var(--card);border:1px solid var(--border);border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);overflow:hidden;display:flex;flex-direction:column}
@@ -78,15 +78,15 @@ footer{border-top:1px solid var(--border);padding:24px 0;font-size:13px;color:va
 const TG = "muyakiray";
 const tools = [
  ["airless-paint-sprayer","ቀለም","የቀለም መርጫ ማሽን","ከብሩሽ በብዙ እጥፍ ፈጣን፣ እኩል ቀለም።","1,500","Airless paint sprayer"],
- ["gypsum-board-lift","ጂፕሰም","የጂፕሰም ቦርድ ማንሻ","አንድ ሰው ብቻውን ጣሪያ ይገጥማል።","1,200","Gypsum board lift"],
- ["wall-chaser","ኤሌክትሪክ","የግድግዳ ቦይ መቁረጫ","ቀጥ ያለ፣ ንጹሕ ቦይ፤ ያለ አቧራ።","1,000","Wall chaser"],
- ["tile-cutter-1200mm","ሴራሚክ","የሴራሚክ መቁረጫ (1200 ሚ.ሜ)","ፖርሴሊንን ሳይሰበር ቀጥ ይቆርጣል።","1,000","1200mm tile cutter"],
+ ["gypsum-board-lift","ጂፕሰም","የጂፕሰም ቦርድ ማንሻ","ጂፕሰም ቦርድን ወደ ጣሪያ ያነሳል፤ አንድ ሰው ብቻውን ይገጥማል።","1,200","Gypsum board lift"],
+ ["wall-chaser","ኤሌክትሪክ","የግድግዳ ቦይ መቁረጫ","ለኤሌክትሪክ ቱቦ ቀጥ ያለና ንጹሕ ቦይ ይቆርጣል።","1,000","Wall chaser"],
+ ["tile-cutter-1200mm","ሴራሚክ","የሴራሚክ መቁረጫ ማሽን","ሴራሚክና ፖርሴሊንን ሳይሰበር ቀጥ አድርጎ ይቆርጣል።","1,000","Tile cutting machine"],
  ["floor-grinder-polisher","ወለል","የወለል መፋቂያና ማንጸባረቂያ","ቴራዞና ኮንክሪትን ያንጸባርቃል።","2,500","Floor grinder/polisher"],
- ["paddle-mixer","","የቀለምና የሲሚንቶ መበጥበጫ","ቀለም፣ ፑቲና ሲሚንቶን በደቂቃዎች ያዋህዳል።","500","Paddle mixer"],
- ["jackhammer","","ጃክ ሀመር (መፍረሻ)","ኮንክሪትና ግድግዳን በፍጥነት ያፈርሳል።","2,000","Jackhammer"],
- ["generator","","ጄኔሬተር","መብራት በሌለበት ቦታ ሥራ አያቋርጥም።","1,500","Generator"],
+ ["paddle-mixer","","የቀለምና የሲሚንቶ ማደባለቂያ","ቀለም፣ ፑቲና ሲሚንቶን በደቂቃዎች ያዋህዳል።","500","Paddle mixer"],
+ ["jackhammer","","ጃክ ሀመር (ማፍረሻ)","ኮንክሪትና ግድግዳን በፍጥነት ያፈርሳል።","2,000","Jackhammer"],
+ ["generator","","ጄኔሬተር","መብራት ቢጠፋም ሥራዎ አይቋረጥም።","1,500","Generator"],
  ["scaffold-tower","","ተንቀሳቃሽ ስካፎልድ","ለጣሪያና ለከፍታ ሥራ ደህንነቱ የተጠበቀ መቆሚያ።","800","Scaffold tower"],
- ["air-compressor","","የአየር ኮምፕሬሰር","ለሚስማር መቺና ለቀለም መርጫ አየር ያቀርባል።","1,000","Air compressor"]
+ ["air-compressor","","የአየር ኮምፕሬሰር","ለቀለም መርጫና ለአየር መሣሪያዎች አየር ያቀርባል።","1,000","Air compressor"]
 ];
 document.getElementById("cards").innerHTML = tools.map(([img,cat,name,line,price,en]) => `
  <div class="card">
