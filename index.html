@@ -95,7 +95,7 @@ document.getElementById("cards").innerHTML = tools.map(([img,cat,name,line,price
    <div class="price">በቀን ${price} ብር</div>
    <div class="two">
     <a class="btn" href="https://www.youtube.com/results?search_query=${encodeURIComponent(en + " how to use")}" target="_blank">እንዴት እንደሚሠራ ይዩ</a>
-    <button class="btn btn-main" onclick="add(this,'${name}','${en}')">ጨምር</button>
+    <button class="btn btn-main" onclick="add(this,'${name}','${en}')">ምረጥ</button>
    </div>
   </div>
  </div>`).join("");
@@ -103,7 +103,7 @@ const cart = [];
 function add(btn, name, en) {
  if (cart.some(c => c[0] === name)) return;
  cart.push([name, en]);
- btn.textContent = "✓ ተጨምሯል";
+ btn.textContent = "✓ ተመርጧል";
  document.getElementById("cart").style.display = "flex";
  document.getElementById("count").textContent = cart.length + " መሣሪያ ተመርጧል";
  document.getElementById("send").href = `https://t.me/${TG}?text=${encodeURIComponent("ሰላም፣ እነዚህን መከራየት እፈልጋለሁ፦\n" + cart.map(c => "- " + c[0] + " (" + c[1] + ")").join("\n"))}`;
