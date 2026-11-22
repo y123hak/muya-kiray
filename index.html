@@ -81,16 +81,16 @@ footer{border-top:1px solid var(--border);padding:24px 0;font-size:13px;color:va
 <script>
 const TG = "muyakiray";
 const tools = [
- ["airless-paint-sprayer","ቀለም","የቀለም መርጫ ማሽን","ከብሩሽ በብዙ እጥፍ ፈጣን፣ እኩል ቀለም።","1,500","Airless paint sprayer","_BM5EsHKQAA"],
- ["gypsum-board-lift","ጂፕሰም","የጂፕሰም ቦርድ ማንሻ","ጂፕሰም ቦርድን ወደ ጣሪያ ያነሳል፤ አንድ ሰው ብቻውን ይገጥማል።","1,200","Gypsum board lift","Cj3KXLJshQw"],
- ["wall-chaser","ኤሌክትሪክ","የግድግዳ ቦይ መቁረጫ","ለኤሌክትሪክ ቱቦ ቀጥ ያለና ንጹሕ ቦይ ይቆርጣል።","1,000","Wall chaser","0D_EGvEqElE"],
- ["tile-cutter-1200mm","ሴራሚክ","የሴራሚክ መቁረጫ ማሽን","ሴራሚክና ፖርሴሊንን ሳይሰበር ቀጥ አድርጎ ይቆርጣል።","1,000","Tile cutting machine","jQuUYczIG00"],
- ["floor-grinder-polisher","ወለል","የወለል መፋቂያና ማንጸባረቂያ","ቴራዞና ኮንክሪትን ያንጸባርቃል።","2,500","Floor grinder/polisher","TJgk6fSG_-U"],
- ["paddle-mixer","","የቀለምና የሲሚንቶ ማደባለቂያ","ቀለም፣ ፑቲና ሲሚንቶን በደቂቃዎች ያዋህዳል።","500","Paddle mixer","MpYyWPMWr3Y"],
- ["jackhammer","","ጃክ ሀመር (ማፍረሻ)","ኮንክሪትና ግድግዳን በፍጥነት ያፈርሳል።","2,000","Jackhammer","WMkTKDOMuZg"],
- ["generator","","ጄኔሬተር","መብራት ቢጠፋም ሥራዎ አይቋረጥም።","1,500","Generator","14rKi3wg4Uo"],
- ["scaffold-tower","","ተንቀሳቃሽ ስካፎልድ","ለጣሪያና ለከፍታ ሥራ ደህንነቱ የተጠበቀ መቆሚያ።","800","Scaffold tower","5uXSwxx50Tw"],
- ["air-compressor","","የአየር ኮምፕሬሰር","ለቀለም መርጫና ለአየር መሣሪያዎች አየር ያቀርባል።","1,000","Air compressor","ntwSqBasLE4"]
+ ["airless-paint-sprayer","ቀለም","የቀለም መርጫ ማሽን","ከብሩሽ በብዙ እጥፍ ፈጣን፣ እኩል ቀለም።","1,500","Airless paint sprayer","eypGmxOPhBw"],
+ ["gypsum-board-lift","ጂፕሰም","የጂፕሰም ቦርድ ማንሻ","ጂፕሰም ቦርድን ወደ ጣሪያ ያነሳል፤ አንድ ሰው ብቻውን ይገጥማል።","1,200","Gypsum board lift","_CfqhgqPhl4"],
+ ["wall-chaser","ኤሌክትሪክ","የግድግዳ ቦይ መቁረጫ","ለኤሌክትሪክ ቱቦ ቀጥ ያለና ንጹሕ ቦይ ይቆርጣል።","1,000","Wall chaser","ncJGMeNKW5Y"],
+ ["tile-cutter-1200mm","ሴራሚክ","የሴራሚክ መቁረጫ ማሽን","ሴራሚክና ፖርሴሊንን ሳይሰበር ቀጥ አድርጎ ይቆርጣል።","1,000","Tile cutting machine","BqRf_zu-m_Y"],
+ ["floor-grinder-polisher","ወለል","የወለል መፋቂያና ማንጸባረቂያ","ቴራዞና ኮንክሪትን ያንጸባርቃል።","2,500","Floor grinder/polisher","Jt4ModA6r4Y"],
+ ["paddle-mixer","","የቀለምና የሲሚንቶ ማደባለቂያ","ቀለም፣ ፑቲና ሲሚንቶን በደቂቃዎች ያዋህዳል።","500","Paddle mixer","dbdBmLYxolg"],
+ ["jackhammer","","ጃክ ሀመር (ማፍረሻ)","ኮንክሪትና ግድግዳን በፍጥነት ያፈርሳል።","2,000","Jackhammer","Dq4pQ4dMKMk"],
+ ["generator","","ጄኔሬተር","መብራት ቢጠፋም ሥራዎ አይቋረጥም።","1,500","Generator","ilHYANbW2kU"],
+ ["scaffold-tower","","ተንቀሳቃሽ ስካፎልድ","ለጣሪያና ለከፍታ ሥራ ደህንነቱ የተጠበቀ መቆሚያ።","800","Scaffold tower","sZ_ICXvAv5M"],
+ ["air-compressor","","የአየር ኮምፕሬሰር","ለቀለም መርጫና ለአየር መሣሪያዎች አየር ያቀርባል።","1,000","Air compressor","EXHshTaSzyY"]
 ];
 document.getElementById("cards").innerHTML = tools.map(([img,cat,name,line,price,en,vid]) => `
  <div class="card">
@@ -99,7 +99,7 @@ document.getElementById("cards").innerHTML = tools.map(([img,cat,name,line,price
    <div class="top"><h3>${name}</h3><span class="price"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>በቀን ${price} ብር</span></div>
    <p>${line}</p>
    <div class="two">
-    <a class="btn" href="https://www.youtube.com/watch?v=${vid}" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>አጠቃቀሙን ይዩ</a>
+    <a class="btn" href="https://www.youtube.com/shorts/${vid}" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>አጠቃቀሙን ይዩ</a>
     <button class="btn btn-main" onclick="add(this,'${name}','${en}')"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg>ምረጥ</button>
    </div>
   </div>
